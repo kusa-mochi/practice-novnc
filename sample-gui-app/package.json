@@ -1,5 +1,6 @@
 {
   "name": "sample-gui-app",
+  "version": "1.0.0",
   "private": true,
   "main": "main/index.js",
   "productName": "ElectronTypescriptNext",
