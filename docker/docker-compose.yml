@@ -1,0 +1,13 @@
+services:
+  vnc_server:
+    image: fredblgr/ubuntu-novnc:20.04
+    ports:
+      - 6080:80
+    volumes:
+      - $PWD:/workspace:rw
+    environment:
+      - USER=mochi
+      - PASSWORD=mochi
+      - RESOLUTION=1680x1050
+    container_name: ubuntu-novnc
+    tty: true
