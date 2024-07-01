@@ -1,0 +1,14 @@
+services:
+  vnc_server:
+    image: whoatemyapplepie/ubuntu-lxde:20.04-vnc_ja
+    build:
+      context: dockerfile_novnc
+    ports:
+      - 5900:5900
+      - 8080:80
+    environment:
+      - USER=mochi
+      - PASSWD=mochi
+      - RESOLUTION=1024x768x24
+    user: 1000:1000
+    tty: true
